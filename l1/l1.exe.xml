@@ -1,0 +1,8 @@
+<testsuites>
+	<testsuite name="AllTests" tests="4">
+		<testcase classname="AllTests" name="testIncrement"/>
+		<testcase classname="AllTests" name="testIncrementWSideeffect"/>
+		<testcase classname="AllTests" name="testOverflow"/>
+		<testcase classname="AllTests" name="testTemplateVersion"/>
+	</testsuite>
+</testsuites>

@@ -1,0 +1,22 @@
+#ifndef SRC_DIRECTORYSIZER_H_
+#define SRC_DIRECTORYSIZER_H_
+#include <string>
+#include <experimental/filesystem>
+#include <fstream>
+#include <iostream>
+
+namespace fs = std::experimental::filesystem;
+
+int directorySizer(std::string const path) {
+	int count{0};
+	for (auto i = fs::recursive_directory_iterator(path); i != fs::recursive_directory_iterator(); i++ ){
+		++count;
+	}
+
+	return count;
+
+}
+
+
+
+#endif /* SRC_DIRECTORYSIZER_H_ */
